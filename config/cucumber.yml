@@ -1,0 +1,16 @@
+<% 
+
+date = Time.now.strftime('%Y_%m_%d_%H:%M')
+
+FileUtils.mkdir("./reports") unless File.exists?("./reports")
+
+html_report = "./reports/helloworld_#{date}.html"
+json_report = "./reports/helloworld_#{date}.json"
+
+%>
+
+default: -p pretty
+
+pretty: -f pretty
+html_report:  -f html -o <%= html_report %>
+json_report:  -f json -o <%= json_report %>

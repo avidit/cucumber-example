@@ -1,0 +1,10 @@
+# irb
+.irb-history
+
+# MacOS
+.DS_Store
+__MACOSX
+
+# Cucumber
+reports/
+screenshots/
