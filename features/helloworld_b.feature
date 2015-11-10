@@ -1,4 +1,4 @@
-Feature: Hello World
+Feature: Hello World B
 
   Scenario: Hello world
     Given I am in page "B"
