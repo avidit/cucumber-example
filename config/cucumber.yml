@@ -12,5 +12,5 @@ json_report = "./reports/helloworld_#{date}.json"
 default: -p pretty
 
 pretty: -f pretty
-html_report:  -f html -o <%= html_report %>
-json_report:  -f json -o <%= json_report %>
+html_report: -f html -o <%= html_report %>
+json_report: -f json -o <%= json_report %>
